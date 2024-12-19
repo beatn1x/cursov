@@ -1,5 +1,5 @@
 # cursov
-ШАГ 1:
+<b>ШАГ 1:</b>
 
 В операционной системе Ubuntu ввести следующие команды в терминале (ctrl+alt+t), нажимая в случае необходимости y (да):
 (В случае если docker уже установлен пропустить команды вплоть до sudo docker run -d --name postgres-container...)
@@ -21,19 +21,19 @@ echo \
 sudo apt-get update
 
 
-sudo docker run -d  --name postgres-container -e POSTGRES_USER=ME  -e POSTGRES_PASSWORD=123  -e POSTGRES_DB=DATA  -p 5433:5432  postgres
+<b>sudo docker run -d  --name postgres-container -e POSTGRES_USER=ME  -e POSTGRES_PASSWORD=123  -e POSTGRES_DB=DATA  -p 5433:5432  postgres</b>
 
-ШАГ 2:
+<b>ШАГ 2:</b>
 
 в случае если не установлено ifconfig ввести команду:
 
 sudo apt install net-tools
 
-ввести команду: ifconfig
+ввести команду: <b>ifconfig</b>
 
 найти ip-адрес Вашей виртуальной машины в предложенном списке: например 192.168.32.132
 
-ШАГ 3:
+<b>ШАГ 3:</b>
 
 на основной операционной системе в файле cursov.ipynb в первом блоке кода в строке:
 
@@ -41,11 +41,11 @@ DATABASE_URL = "postgresql://ME:123@192.168.32.132:5433/DATA"
 
 вместо 192.168.32.132 введите ip-адрес Вашей виртуальной машины, найденный в шаге 2
 
-Выберите в правом верхнем углу kernel venv(python 3.10.11)
+Выберите в правом верхнем углу kernel <b>venv(python 3.10.11)</b>
 
-нажмите кнопку Run all
+нажмите кнопку <b>Run all</b>
 
-ШАГ 4: 
+<b>ШАГ 4:</b> 
 
 откройте в браузере на основной операционной системе localhost:8000 для работы с формой html или localhost:8000/docs для работы со swagger
 
